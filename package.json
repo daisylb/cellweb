@@ -1,0 +1,25 @@
+{
+  "name": "cellweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "ava": "^3.5.0",
+    "ts-node": "^8.7.0",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "src/**/*.test.ts"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
