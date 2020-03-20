@@ -114,6 +114,10 @@ function C(value: any): Computation<any> | Data<any> {
 
 export default C
 
+export function isCell(value: unknown): value is Cell<unknown> {
+  return value instanceof BaseCell
+}
+
 // type PromiseState<T> =
 //   | { state: "waiting" }
 //   | { state: "success"; data: T }
