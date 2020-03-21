@@ -1,6 +1,6 @@
 {
   "name": "cellweb",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MPL-2.0",
   "devDependencies": {
@@ -8,8 +8,12 @@
     "ts-node": "^8.7.0",
     "typescript": "^3.8.3"
   },
+  "files": ["dist/**"],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "tsc"
   },
   "ava": {
     "files": [

@@ -1,3 +1,9 @@
 {
-    "compilerOptions": {"strict": true, "target": "ESNext", "moduleResolution": "node"},
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist/",
+    "declaration": true
+  }
 }
